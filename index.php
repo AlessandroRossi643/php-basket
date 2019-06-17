@@ -1,4 +1,4 @@
-<?php include 'datab.php'?>
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
+    <div class="container">
+      <?php include 'datab.php'?>
+    </div>
   </body>
 </html>
