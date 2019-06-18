@@ -22,7 +22,7 @@ function generatePointReboundsFauls($min,$max){
   return rand($min,$max);
 };
 
-$g;
+
 for ($g=0; $g < 100; $g++) {
   do {
     $giocatore=[
@@ -38,15 +38,5 @@ for ($g=0; $g < 100; $g++) {
   $arrayGiocatori[]=$giocatore;
 }
 
-  foreach ($arrayGiocatori as $key => $value) {
-    ?>
-    <div class="player">
-      <h2> <?php echo "CODICE GIOCATORE: " . $value["codiceGiocatore"]; ?> </h2>
-      <h3> <?php echo "PUNTI FATTI: " . $value["puntiFatti"]; ?> </h3>
-      <h3> <?php echo "RIMBALZI: " . $value["rimbalzi"]; ?> </h3>
-      <h3> <?php echo "FALLI: " . $value["falli"]; ?> </h3>
-      <h3> <?php echo "TIRI DA 2 PUNTI: " . $value["tiri2"]; ?> </h3>
-      <h3> <?php echo "TIRI DA 3 PUNTI: " . $value["tiri3"]; ?> </h3>
-    </div> <?php
-  }
+
 ?>
